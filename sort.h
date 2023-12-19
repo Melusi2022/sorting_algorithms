@@ -1,6 +1,5 @@
 #ifndef SORT_H
 #define SORT_H
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -13,9 +12,9 @@
  */
 typedef struct listint_s
 {
-    const int n;
-    struct listint_s *prev;
-    struct listint_s *next;
+	const int n;
+	struct listint_s *prev;
+	struct listint_s *next;
 } listint_t;
 
 void swap(int *first_int, int *second_int);
@@ -34,5 +33,4 @@ size_t knuth_sequence_formula(size_t size);
 void merge_sort(int *array, size_t size);
 void merge(int *array, int *left, size_t lz, int *right, size_t rz);
 void insert(int *array, size_t size);
-
 #endif
